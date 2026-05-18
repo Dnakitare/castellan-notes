@@ -52,4 +52,4 @@ The point is not the latency. It is that every one of those twenty events is som
 
 *Built solo, spec-first, as a study in what it would take for delegated authority in local agent systems to clear an industrial buyer's bar.*
 
-*Contact: [haraka@protonmail.com](mailto:haraka@protonmail.com)*
+*Contact: [dnakitare@gmail.com](mailto:dnakitare@gmail.com)*
