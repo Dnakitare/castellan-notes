@@ -35,7 +35,7 @@ The maintenance domain is the vehicle. The point is the trust and architecture s
 
 - [`docs/specs/`](docs/specs/) — six specifications: scenario, auditor view, architecture, authority model, event schema, vertical slice. The source of truth the build follows.
 - [`docs/decisions/`](docs/decisions/) — thirteen architectural decision records. Each is two paragraphs: what was decided, why, what was rejected.
-- [`docs/evals/`](docs/evals/) — how the two refusal surfaces are measured. The broker scores 0% false grants across the full taxonomy; the classifier gate scores a 40% false-act rate on adversarial confident-but-empty tickets, which is the point: it shows exactly where the model layer fails and why the authority layer underneath it matters.
+- [`docs/evals/`](docs/evals/) — how the two refusal surfaces are measured. The broker scores 0% false grants across the full taxonomy. The classifier gate starts at a 40% false-act rate on adversarial confident-but-empty tickets; a hardened prompt halves that with no regression and makes the confidence distribution separable, leaving a residual that exposes the limit — a 3B model can check a symptom's form but not its semantic validity. Find, fix, and the part a prompt can't reach.
 
 The specs predate the code. Where the implementation and a spec disagreed, one of them was wrong and the disagreement was resolved before the session ended.
 
